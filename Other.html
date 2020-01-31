@@ -80,13 +80,47 @@
 		var data = ev.dataTransfer.getData("text");
 		ev.target.appendChild(document.getElementById(data));
 	}
+		
+		
+function ondrop(event)
+	{
+		if (currentDroppable = "drag1")
+	
+	function DragAndDropForm() {
+  var x, text;
+
+  x = document.getElementById("numb").value;
+
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+	}
+		
 	</script>	
 	
-	<img id="drag1" src="images/Yes.png" class="dragimg" draggable="true" ondragstart="drag(event)"><img src="images/No.png" class="dragimg">
+	<img id="drag1" src="images/Yes.png" class="dragimg" alt="Yes" draggable="true" ondragstart="drag(event)">
+	<img id="drag2" src="images/No.png" class="dragimg" alt="No" draggable="true" ondragstart="drag(event)">
 	
 
 	
 	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	
+	
+	
+	<p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+	
+	
+	
 	
 	<footer><p><b>Website made by Jaakko Kyllönen</b></p></footer></p>
 	
