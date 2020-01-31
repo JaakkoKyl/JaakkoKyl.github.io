@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet"type="text/css" href="/css/style.css"/>
+<title>Other</title>
+</head>
+
+<body>
+	
+	<header><h1>MY STUFF</h1></header>
+	
+	<nav>
+	<a href="FrontPage.html"><p2><b>Front Page</b></p2></a>
+	<a href="2D_Art.html"><p2><b>2D Art</b></p2></a>
+	<a href="3D_Art.html"><p2><b>3D Art</b></p2></a>
+	<a href="Other.html"><p2><b>Other</b></p2></a>
+	</nav>
+	
+	<h2>Other</h2>
+	
+	<p><b><u>Things I Like</u></b></p>
+	<ul>
+		<li>Video games</li>
+		<li>Movies</li>
+		<li>Comics</li>
+		<li>Cartoons</li>
+		<li>Music</li>
+		<li>Drawing</li>
+		<li>3D modeling</li>
+		<li>Dungeons &amp; Dragons</li>
+		<li>Sauna</li>
+	</ul>
+	
+	
+	<p><b><u>My Dungeons &amp; Dragons characters</u></b></p>
+	<table align="center">
+		<tr>
+			<th>Name</th>
+			<th>Race</th>
+			<th>Class</th>
+		</tr>
+		<tr>
+			<td>Karahn Nalakathai</td>
+			<td>Goliath</td>
+			<td>Paladin</td>
+		</tr>
+		<tr>
+			<td>Gerrick Gim</td>
+			<td>Deep Gnome</td>
+			<td>Wizard</td>
+		</tr>
+		<tr>
+			<td>Almer Daeven</td>
+			<td>Wood Elf</td>
+			<td>Monk</td>
+		</tr>
+		<tr>
+			<td>Jakki</td>
+			<td>Halfling</td>
+			<td>Barbarian</td>
+		</tr>
+	</table>
+	
+	<p><b><u>Where I Am</u></b></p>
+	
+	<p><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=26.382293701171875%2C63.9434054180333%2C28.67568969726563%2C64.48935935787927&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=10/64.2177/27.5290">View Larger Map</a></small>
+		
+		<p><b><u>Want to ask me a question? Drag and drop either Yes or No into the box.</u></b></p>
+	
+	<script>
+	function allowDrop(ev) {
+		ev.preventDefault();
+	}
+	function drag(ev) {
+		ev.dataTransfer.setData("text", ev.target.id);
+	}
+	function drop(ev) {
+		ev.preventDefault();
+		var data = ev.dataTransfer.getData("text");
+		ev.target.appendChild(document.getElementById(data));
+	}
+	</script>	
+	
+	<img id="drag1" src="images/Yes.png" class="dragimg" draggable="true" ondragstart="drag(event)"><img src="images/No.png" class="dragimg">
+	
+
+	
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	
+	<footer><p><b>Website made by Jaakko Kyllönen</b></p></footer></p>
+	
+</body>
+</html>
