@@ -1,0 +1,231 @@
+body {
+	background-image: url("../images/SiteBackground.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+header {
+	background-color:#BBBBBB;
+}
+
+footer {
+	font-family: Verdana;
+	background-color:#BBBBBB;
+	text-align: center;
+	color: #3D3D3D;
+	padding: 5px;
+    margin-top: 30px;
+}
+
+nav {
+	text-align: center;
+	background-color:#BBBBBB;
+	padding: 10px;
+}
+
+h1 {
+	font-family: Trebuchet MS;
+	font-size: 75px;
+	text-decoration: overline underline dotted;
+	text-align: center;
+	color: #3D3D3D;
+}
+
+h2 {
+	font-family: Trebuchet MS;
+	font-size: 50px;
+	text-decoration: overline underline dotted;
+	text-align: center;
+	color: #3D3D3D;
+}
+
+p {
+	font-family: Verdana;
+	text-align: center;
+	text-decoration: none;
+	color: #3D3D3D;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+p2 {
+	font-family: Verdana;
+	text-align: center;
+	text-decoration: none;
+	color: #3D3D3D;
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+a:link {
+	color: #3D3D3D;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #3D3D3D;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #232323;
+	text-decoration: overline underline;
+}
+
+a:active {
+	color: #131313;
+	text-decoration: overline underline;
+}
+
+table {
+	font-family: Verdana;
+	font-size: 12px;
+	border-collapse: collapse;
+	width: 30%
+}
+
+td, th {
+	border: 2px dotted #3D3D3D;
+	text-align: left;
+	padding: 10px;
+}
+
+tr:nth-child(even) {
+	background-color: #BBBBBB;
+}
+
+ul {
+	text-align: center;
+	list-style: inside;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	font-family: Verdana;
+}
+
+img {
+	border-radius: 25px;
+	opacity: 0.75;
+	width: 400px;
+	height: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	object-fit: cover;
+	object-position: 50% 0%;
+}
+
+img:hover {
+	transition-duration: 0.3s;
+	background-color: #B5B5B5; opacity:1;
+	color: #1F1F1F;
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1)
+}
+
+.dragimg {
+	width: 88px;
+	height: 45px;
+}
+
+#div1 {
+	width: 88px;
+	height: 45px;
+	padding: 15px;
+	border: 2px dotted #3D3D3D;
+}
+
+.column {
+	column-count: 3;
+	column-rule: 10px dotted #3D3D3D;
+}
+
+
+.container {
+	text-align: center;
+}
+
+.btn {
+	background-image:url("../images/jaakko-kyllonen-019_thumb.jpg");
+	color: #FFFFFF; opacity:0.75;
+	font-family: Verdana;
+	font-size: 30px;
+	padding: 60px 60px;
+	border: none;
+	cursor: pointer;
+	border-radius: 30px;
+	text-align: center;
+	display: inline-block;
+	margin: 10px;
+}
+
+.btn:hover {
+	transition-duration: 0.3s;
+	background-color: #B5B5B5; opacity:1;
+	color: #1F1F1F;
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1)
+	
+}
+
+
+.btn1 {
+	background-image:url("../images/3DModelsAll.png");
+	color: #FFFFFF; opacity:0.75;
+	font-family: Verdana;
+	font-size: 30px;
+	margin: auto;
+  	width: auto;
+	padding: 60px 60px;
+	border: none;
+	cursor: pointer;
+	border-radius: 30px;
+	text-align: center;
+	display: inline-block;
+	margin: 10px;
+}
+
+
+.btn1:hover {
+	transition-duration: 0.3s;
+	background-color: #B5B5B5; opacity:1;
+	color: #1F1F1F;
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1)
+	
+}
+
+.btn2 {
+	background-image:url("../images/jaakko-kyllonen-grumpy-model.jpg");
+	color: #FFFFFF; opacity:0.75;
+	font-family: Verdana;
+	font-size: 30px;
+	margin: auto;
+  	width: auto;
+	padding: 60px 60px;
+	border: none;
+	cursor: pointer;
+	border-radius: 30px;
+	text-align: center;
+	display: inline-block;
+	margin: 10px;
+}
+
+
+.btn2:hover {
+	transition-duration: 0.3s;
+	background-color: #B5B5B5; opacity:1;
+	color: #1F1F1F;
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1)
+	
+}
