@@ -105,7 +105,7 @@ function FormAnswer() {
 
   if (x = "yes") {
     text = "Okay, ask me in person if you can find me.";
-  } else {
+  } else if (x = "no") {
     text = "Your loss.";
   }
   document.getElementById("demo").innerHTML = text;
