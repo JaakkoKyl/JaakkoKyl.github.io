@@ -66,7 +66,7 @@
 	
 	<p><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=26.382293701171875%2C63.9434054180333%2C28.67568969726563%2C64.48935935787927&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=10/64.2177/27.5290">View Larger Map</a></small>
 		
-		<p><b><u>Want to ask me a question? Drag and drop either Yes or No into the box.</u></b></p>
+		<p><b><u>Drag the smiley face into the box, if you're so smart.</u></b></p>
 	
 	<script>
 	function allowDrop(ev) {
@@ -82,45 +82,35 @@
 	}
 		
 		
-function ondrop(event)
-	{
-		if (currentDroppable = "drag1")
+	</script>	
 	
-	function DragAndDropForm() {
+	<img id="drag1" src="images/smiley.png" class="dragimg" alt="Mister Smiley" draggable="true" ondragstart="drag(event)">
+	
+	
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	
+	<p><b><u>Do you want to ask me a question?</u></b></p>
+
+<input id="numb">
+
+<button type="button" onclick="FormAnswer()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function FormAnswer() {
   var x, text;
 
   x = document.getElementById("numb").value;
 
-  if (isNaN(x) || x < 1 || x > 10) {
-    text = "Input not valid";
+  if (x = "yes") {
+    text = "Okay, ask me in person if you can find me.";
   } else {
-    text = "Input OK";
+    text = "Your loss.";
   }
   document.getElementById("demo").innerHTML = text;
 }
-	}
-		
-	</script>	
-	
-	<img id="drag1" src="images/Yes.png" class="dragimg" alt="Yes" draggable="true" ondragstart="drag(event)">
-	<img id="drag2" src="images/No.png" class="dragimg" alt="No" draggable="true" ondragstart="drag(event)">
-	
-
-	
-	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-	
-	
-	
-	<p>Please input a number between 1 and 10:</p>
-
-<input id="numb">
-
-<button type="button" onclick="myFunction()">Submit</button>
-
-<p id="demo"></p>
-	
-	
-	
+</script>
 	
 	<footer><p><b>Website made by Jaakko Kyllönen</b></p></footer></p>
 	
