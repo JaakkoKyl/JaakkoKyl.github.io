@@ -135,10 +135,17 @@ img:hover {
 }
 
 #div1 {
+	display: block;
+	margin: auto;
 	width: 88px;
 	height: 45px;
 	padding: 15px;
 	border: 2px dotted #3D3D3D;
+}
+
+video {
+	display: block;
+	margin: 0 auto;
 }
 
 .column {
@@ -149,6 +156,16 @@ img:hover {
 
 .container {
 	text-align: center;
+}
+
+button  {
+	display: block;
+	margin: 0 auto;
+}
+
+input {
+	display: block;
+	margin: 0 auto;
 }
 
 .btn {
