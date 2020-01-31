@@ -91,17 +91,20 @@
 	
 	<p><b><u>Do you want to ask me a question?</u></b></p>
 
-<input id="numb">
+<input id="input">
 
 <button type="button" onclick="FormAnswer()">Submit</button>
 
 <p id="demo"></p>
 
 <script>
-function FormAnswer() {
-  	var x = document.getElementById("input").value;
-	var text;
+		
 	
+function FormAnswer() {
+  var x, text;
+
+  x = document.getElementById("input").value;
+
   if (x = "yes") {
     text = "Okay, ask me in person if you can find me.";
   } else if (x = "no") {
